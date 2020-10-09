@@ -3,3 +3,8 @@
 <p> <%= @status %></p>
 
 <p><%= link_to 'Change Status', activate_student_path(@student) %></p>
+
+
+<form action="<%=activate_student_path(@student)%>" method="GET" id="submit">
+  </form>
+<button type="submit" form="submit">Change Status</button>
